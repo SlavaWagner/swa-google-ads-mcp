@@ -1,0 +1,17 @@
+# Dependencies
+node_modules/
+
+# Local credentials & OAuth tokens (NEVER commit!)
+config.json
+.env
+.env.*
+
+# Local runtime storage, logs & artifacts
+storage/
+runs/
+logs/
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
