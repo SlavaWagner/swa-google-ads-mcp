@@ -235,3 +235,10 @@ The test suite verifies:
 ## License
 
 This project is licensed under the **MIT License** — see [LICENSE](./LICENSE) for details.
+
+
+---
+
+## ⚡ Built with Google Antigravity CLI
+
+This project was created and crafted with the assistance of the **Google Antigravity CLI (`agy`)**. It leverages Antigravity's autonomous agent architecture, Model Context Protocol (MCP) tooling, and subagent orchestration framework to provide enterprise-grade Google Ads management.
