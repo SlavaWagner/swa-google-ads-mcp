@@ -16,7 +16,6 @@ export function isRunningInsideAntigravity(argv = process.argv, env = process.en
     'ANTIGRAVITY_TRAJECTORY_ID',
     'ANTIGRAVITY_AGENT',
     'ANTIGRAVITY_CONVERSATION_ID',
-    'JETSKI_APP_DATA_DIR',
     'AGY_SESSION',
     'AGY'
   ];
@@ -26,7 +25,7 @@ export function isRunningInsideAntigravity(argv = process.argv, env = process.en
   }
 
   return Object.keys(env).some(
-    (k) => (k.startsWith('ANTIGRAVITY_') || k.startsWith('AGY_') || k.startsWith('JETSKI_')) && Boolean(env[k])
+    (k) => (k.startsWith('ANTIGRAVITY_') || k.startsWith('AGY_')) && Boolean(env[k])
   );
 }
 

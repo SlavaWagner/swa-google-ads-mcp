@@ -87,10 +87,10 @@ async function testHelpers() {
 }
 
 async function testAntigravityGuard() {
-  // Strip any ANTIGRAVITY_*, AGY_*, JETSKI_* env vars so we simulate plain shell
+  // Strip any ANTIGRAVITY_*, AGY_* env vars so we simulate plain shell
   const cleanEnv = {};
   for (const [k, v] of Object.entries(process.env)) {
-    if (!k.startsWith('ANTIGRAVITY_') && !k.startsWith('AGY_') && !k.startsWith('JETSKI_')) {
+    if (!k.startsWith('ANTIGRAVITY_') && !k.startsWith('AGY_') && k !== 'AGY') {
       cleanEnv[k] = v;
     }
   }
